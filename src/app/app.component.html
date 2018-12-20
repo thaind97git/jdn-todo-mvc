@@ -1,0 +1,20 @@
+<div class="wrapper d-flex flex-column align-items-center w-100">
+  <h1 class="title">Todos</h1>
+  <div class="row justify-content-center w-100">
+    <div class="todo-wrapper p-0 d-flex flex-column col-md-6 col-sm-8">
+      <app-header style="height: 40px;
+      padding: 10px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.1);"></app-header>
+      <app-todo-list></app-todo-list>
+      <app-footer *ngIf="hasTodo$ | async"></app-footer>
+    </div>
+  </div>
+  <small class="instruction text-center">
+    <em>Press Enter to add new todo. Press Arrow icon to toggle todos</em>
+    <br>
+    thaind97.dev@gmail.com
+    <br><br>
+    Copyright TodosMVC Project
+  </small>
+</div>
